@@ -2,7 +2,7 @@ package com.geekbrains.Lesson_7;
 
 public class Plate {
 
-    private int food;
+    public int food;
 
     int getFood() {
         return food;

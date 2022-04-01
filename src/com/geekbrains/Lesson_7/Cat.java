@@ -18,10 +18,6 @@ public class Cat {
         return satiety;
     }
 
-    void setSatiety(int satiety) {
-        this.satiety = satiety;
-    }
-
     Cat(String name, int appetite) {
 
         this.name = name;

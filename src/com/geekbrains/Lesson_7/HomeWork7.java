@@ -11,6 +11,7 @@ public class HomeWork7 {
         cat[3] = new Cat("Боря", 120);
         cat[4] = new Cat("Петя", 200);
         Plate plate = new Plate(200);
+        System.out.println("В миске " + plate.food + " грамм корма");
             for (Cat i : cat) {
                 if (i.getSatiety() == 0) {
                     if (!plate.checkFood(i.getAppetite())) {
@@ -19,7 +20,6 @@ public class HomeWork7 {
                     i.eat(plate);
                     System.out.println("Кот " + i.getName() + " съел " + i.getAppetite() + " граммов корма и теперь сыт");
                 }
-                i.setSatiety(i.getSatiety() - 1);
             }
     }
 }
