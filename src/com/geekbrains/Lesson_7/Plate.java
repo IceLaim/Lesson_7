@@ -4,10 +4,6 @@ public class Plate {
 
     public int food;
 
-    int getFood() {
-        return food;
-    }
-
     Plate(int food) {
         this.food = food;
     }
