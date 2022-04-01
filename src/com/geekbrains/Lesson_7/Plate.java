@@ -2,18 +2,27 @@ package com.geekbrains.Lesson_7;
 
 public class Plate {
 
-    private int foodQuantity;
+    private int food;
 
-    public Plate(int foodQuantity) {
-        this.foodQuantity = foodQuantity;
+    int getFood() {
+        return food;
     }
 
-    public void info() {
-        System.out.println("Текущее кол-во еды " + foodQuantity + " грамм");
+    Plate(int food) {
+        this.food = food;
     }
 
-    public void decreaseFood(int foodQuantity) {
-        this.foodQuantity -= foodQuantity;
+    void decreaseFood(int n) {
+        food -= n;
+    }
+
+    void increaseFood() {
+        this.food += 500;
+        System.out.println("В миску добавили 500 грамм корма");
+    }
+
+    boolean checkFood(int n) {
+        return (food - n) >= 0;
     }
 }
 

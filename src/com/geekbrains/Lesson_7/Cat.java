@@ -4,16 +4,33 @@ public class Cat {
 
     private String name;
     private int appetite;
+    private int satiety;
 
-    public Cat(String name, int appetite) {
+    String getName() {
+        return name;
+    }
+
+    int getAppetite() {
+        return appetite;
+    }
+
+    int getSatiety() {
+        return satiety;
+    }
+
+    void setSatiety(int satiety) {
+        this.satiety = satiety;
+    }
+
+    Cat(String name, int appetite) {
+
         this.name = name;
         this.appetite = appetite;
+        this.satiety = 0;
     }
 
-    public void eat(Plate plate) {
-        System.out.println(name + " съел " + appetite + " грамм корма");
-        plate.decreaseFood(appetite);
+    void eat(Plate p) {
+        p.decreaseFood(appetite);
     }
-
 }
 
